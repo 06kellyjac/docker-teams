@@ -1,5 +1,6 @@
 
 FROM debian:buster-slim
+LABEL maintainer="06kellyjac@googlemail.com"
 ENV VERSION 0.0.5
 ENV XDG_CONFIG_HOME=/
 RUN apt-get update &&\

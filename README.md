@@ -25,23 +25,22 @@ docker run -v /tmp/.X11-unix:/tmp/.X11-unix \
 
 # Example command flat:
 docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v ~/.config/teams-for-linux:/teams-for-linux 06kellyjac/teams &
-
-
-# Add --rm remove the container when closed
-
-
-# Use --name X to name the container something easier to deal with than the random one:
-# --name the-name-you-want
-
-
-# Add the following to save your config:
-# -v /wherever:/teams-for-linux
-#
-# Use $XDG_CONFIG_HOME/teams-for-linux to use your config with native `teams-for-linux`
-#
-# IMPORTANT - You should create your folder before running the container to ensure it has a user id of 1000
-# If you are not user id 1000 then you can either make your config folder for user id 1000 or try play with namespaces and mounting passwd and groups in read-only if your kernel supports it.
 ```
+
+Add `--rm` remove the container when closed
+
+
+Use `--name X` to name the container something easier to deal with than the random one.
+
+
+To save your config, add the following:
+`-v /wherever:/teams-for-linux`
+Put it in `$XDG_CONFIG_HOME/teams-for-linux` to use your config with native `teams-for-linux`.
+`$XDG_CONFIG_HOME` may be empty, the default location is `~/.config`
+
+**IMPORTANT** - You should create your folder before running the container to ensure it has a user id of `1000`.
+
+If you are not user id `1000` then you can either make your config folder for user id `1000` or try play with 'namespaces' and mounting `passwd` and `groups` in read-only if your kernel supports it.
 
 # Quick reference
 
