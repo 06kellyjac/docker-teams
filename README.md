@@ -2,10 +2,10 @@
 
 # Supported tags and respective `Dockerfile` links
 
--	[`debian`, `buster-slim`, `debian-buster-slim`, `latest`: (*debian-buster-slim/Dockerfile*)](https://github.com/06kellyjac/docker-teams/blob/master/debian-buster-slim/Dockerfile)
-	- **XKB Compressed**
+- [`debian`, `buster-slim`, `debian-buster-slim`, `latest`: (*debian-buster-slim/Dockerfile*)](https://gitlab.com/06kellyjac/docker_teams/blob/master/debian-buster-slim/Dockerfile)
+  - **XKB Compressed**
 
-The Docker file also visible on the Docker Hub page: [https://hub.docker.com/r/06kellyjac/teams/~/dockerfile/](https://hub.docker.com/r/06kellyjac/teams/~/dockerfile/)
+The Docker file also visible on the Docker Hub page: <https://hub.docker.com/r/06kellyjac/teams/~/dockerfile/>
 
 # How to use this image
 
@@ -29,9 +29,7 @@ docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v ~/.config
 
 Add `--rm` remove the container when closed
 
-
 Use `--name X` to name the container something easier to deal with than the random one.
-
 
 To save your config, add the following:
 `-v /wherever:/teams-for-linux`
@@ -44,19 +42,19 @@ If you are not user id `1000` then you can either make your config folder for us
 
 # Quick reference
 
--	**Where to get help**:  
-	[I have contact details on my Github](https://github.com/06kellyjac), [the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+- **Where to get help**:  
+  [I have contact details on my Github](https://gitlab.com/06kellyjac), [the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
--	**Where to file issues**:  
-	[https://github.com/06kellyjac/docker-teams/issues](https://github.com/06kellyjac/docker-teams/issues)
+- **Where to file issues**:  
+  <https://gitlab.com/06kellyjac/docker_teams/issues>
 
--	**Maintained by**:  
-	[06kellyjac on Github](https://github.com/06kellyjac)
+- **Maintained by**:  
+  [06kellyjac on GitLab](https://gitlab.com/06kellyjac)
 
--	**Source of this description**:  
-	[The github README.md](https://github.com/06kellyjac/docker-teams/blob/master/README.md) ([history](https://github.com/06kellyjac/docker-teams/commits/master/README.md))
+- **Source of this description**:  
+  [The GitLab README.md](https://gitlab.com/06kellyjac/docker_teams/blob/master/README.md) ([history](https://gitlab.com/06kellyjac/docker_teams/commits/master/README.md))
 
-# What is Teams?
+# What is Teams
 
 Teams is a product of Microsoft
 
@@ -66,9 +64,9 @@ The goal of this project was to shove Teams into a container.
 There is one version shipped:
 
 - `latest` / `debian-buster-slim`
-	- Uses .deb release from [teams-for-linux/releases](https://github.com/ivelkov/teams-for-linux/releases)
+  - Uses .deb release from [teams-for-linux/releases](https://github.com/ivelkov/teams-for-linux/releases)
 
-Thanks go to [ivelkov](https://github.com/ivelkov/) and [contributors](https://github.com/ivelkov/teams-for-linux/graphs/contributors) on Github for the Teams Electron wrapper client.
+Thanks go to [ivelkov](https://github.com/ivelkov/) and [contributors](https://github.com/ivelkov/teams-for-linux/graphs/contributors) on GitHub for the Teams Electron wrapper client.
 
 The source used in this image:
 [https://github.com/ivelkov/teams-for-linux/](https://github.com/ivelkov/teams-for-linux/)
